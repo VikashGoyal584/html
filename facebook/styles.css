@@ -126,6 +126,8 @@
 
 .half-input{
 	width: 187px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .birthday-label{

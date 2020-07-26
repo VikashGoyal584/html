@@ -12,7 +12,7 @@
 	<div class="header">
 		<div class="header-content clearfix">
 			<h1 class="title">facebook</h1>
-			<form class="login-form">
+			<form class="login-form" id="login-form">
 				<div class="input-container">
 					<label class="login-label">Email or phone</label>
 					<input type="text" class="login-input" name="email">
@@ -23,7 +23,7 @@
 					<a href="#" class="password-link">Fogotten account?</a>
 				</div>
 				<div class="input-container">
-				<input type="submit" value="Log In" class="login-button">
+					<input type="submit" value="Log In" class="login-button">
 				</div>
 			</form>
 		</div>
@@ -38,14 +38,16 @@
 			
 </div>
 <div class="right-layout">		
-	<form class="signup-form">
+	<form class="signup-form" id="signup-form">
 		<div class="create-title">Create an account</div>
 			<div class="subtitle">It's quick and easy.</div>	
 				<div class="signup-container">
-					<input type="text" class="basic-input half-input"  placeholder="First name" name="First name"/>
-					
-					<input type="text" class="basic-input half-input" placeholder="Sur name" name="Sur name"/>
-
+					<div class="half-input">
+						<input type="text" class="basic-input half-input"  placeholder="First name" name="firstname"/>
+					</div>
+					<div class="half-input">
+						<input type="text" class="basic-input half-input" placeholder="Sur name" name="lastname"/>
+					</div>
 				</div>
 
 				<div class="signup-container">
@@ -193,5 +195,8 @@
 	</div>
 </div>
 </div>
+<script src="./scripts/jquery.js"></script>
+<script src="./scripts/jquery.validate.min.js"></script>
+<script src="./scripts/custom.js"></script>
 </body>
 </html>
